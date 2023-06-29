@@ -1,0 +1,38 @@
+#palco {
+    /* Nosso palco ocupará 80% da largura e 70% da altura da tela. */
+    width: 80%;
+    height: 80vh;
+    /* Define a imagem a ser utilizada como pano de fundo. */
+    background-image: url('https://i.pinimg.com/474x/e6/92/d2/e692d2424536bb6c92e12bff525d1163.jpg');
+    /* A imagem  deve cobrir a div inteira, tanto em altura como em largura. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Margens superior e inferior zero e direita e esquerda automática, para que fique centralizado. */
+    margin: 0 auto;
+}
+
+#fantasma1 {
+    position: relative;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+    /* Para que com margin left/right auto fique alinhado a esquerda com o palco */
+    width: 80%;
+    /* Para "centralizar" horizontalmente */
+    margin: 0 auto;
+    font-size: 1.5em;
+    padding: .2em;
+}
+
+#cronometro span,
+#placar span {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50px;
+    text-align: center;
+    color: white;
+    background-color: orange;
+    border: 1px solid black;
+}
